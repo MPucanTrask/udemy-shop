@@ -8,11 +8,11 @@ import './directory.styles.scss';
 const items = getShopData()
 
 const Directory = () => (
-    <div className='directory-menu'>
-        {items.map(({ id, ...otherParameters}) => (
-            <MenuItem key={id} {...otherParameters} />
-        ))}
-    </div>
+  <div className='directory-menu'>
+    {items.map(({id, ...otherParameters}) => (
+      <MenuItem key={id} {...otherParameters} />
+    ))}
+  </div>
 )
 
 export default Directory;
