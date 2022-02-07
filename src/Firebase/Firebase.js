@@ -1,24 +1,21 @@
-import firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/auth';
-
-const config = {
-  apiKey: 'AIzaSyCdHT-AYHXjF7wOrfAchX4PIm3cSj5tn14',
-  authDomain: 'crwn-db.firebaseapp.com',
-  databaseURL: 'https://crwn-db.firebaseio.com',
-  projectId: 'crwn-db',
-  storageBucket: 'crwn-db.appspot.com',
-  messagingSenderId: '850995411664',
-  appId: '1:850995411664:web:7ddc01d597846f65'
-};
-
-firebase.initializeApp(config);
-
-export const auth = firebase.auth();
-export const firestore = firebase.firestore();
-
-const provider = new firebase.auth.GoogleAuthProvider();
-provider.setCustomParameters({prompt: 'select_account'});
-export const signInWithGoogle = () => auth.signInWithPopup(provider);
-
-export default firebase;
+// import { initializeApp } from 'firebase/app';
+// import { getAnalytics } from 'firebase/analytics';
+// import 'firebase/firestore';
+// import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+// import {getConfig} from "../data/firebaseConfig";
+// import firebase from "firebase/app";
+//
+// const config = getConfig()
+//
+// const app = initializeApp(config)
+// const analytics = getAnalytics(app)
+//
+// export const auth = getAuth();
+//
+// const provider = new auth.GoogleAuthProvider();
+// provider.addScope('profile');
+// provider.addScope('email');
+// firebase.auth().signInWithPopup(provider).then(function(result) {});
+// export const signInWithGoogle = () => auth.signInWithPopup(provider);
+//
+// export default firebase

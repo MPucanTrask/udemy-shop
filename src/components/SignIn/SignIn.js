@@ -2,8 +2,7 @@ import React, {useState} from 'react';
 
 import FormInput from '../FormInput/FormInput';
 import CustomButton from '../CustomButton/CustomButton';
-
-// import {signInWithGoogle} from '../../Firebase/Firebase.utils';
+import {signInWithGoogle} from "../../Firebase/Firebase";
 
 import './sign-in.styles.scss';
 
