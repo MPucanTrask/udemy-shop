@@ -3,7 +3,7 @@ import {useNavigate} from 'react-router-dom'
 
 import './menu-item.styles.scss';
 
-const MenuItem = ({title, imageUrl, size, routeName}) => {
+const MenuItem = ({title, imageUrl, routeName}) => {
   let navigate = useNavigate()
 
   function getRoute() {
@@ -11,7 +11,7 @@ const MenuItem = ({title, imageUrl, size, routeName}) => {
   }
 
   return (
-    <div className={`${size} menu-item`} onClick={getRoute}>
+    <article className="menu-item" onClick={getRoute}>
       <div
         className='background-image'
         style={{
@@ -22,7 +22,7 @@ const MenuItem = ({title, imageUrl, size, routeName}) => {
         <h1 className='title'>{title.toUpperCase()}</h1>
         <span className='subtitle'>SHOP NOW</span>
       </div>
-    </div>
+    </article>
   );
 }
 
